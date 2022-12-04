@@ -1,0 +1,23 @@
+{
+  "name": "code_challange2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch db.json",
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryan605/code_challange2.git"
+  },
+  "author": "Ryan Langat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryan605/code_challange2/issues"
+  },
+  "homepage": "https://github.com/ryan605/code_challange2#readme",
+  "dependencies": {
+    "json-server": "^0.17.1"
+  }
+}
