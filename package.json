@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/ryan605/code_challange2#readme",
   "dependencies": {
-    "json-server": "^0.17.1"
+    "install": "^0.13.0",
+    "json": "^11.0.0",
+    "json-server": "^0.17.1",
+    "server": "^1.0.37"
   }
 }
