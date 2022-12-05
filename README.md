@@ -22,7 +22,7 @@ As a user, I can:
 
 See a list of all animal names. You will need to make a GET request to the following endpoint to retrieve the character data
  GET /characters
-
+# GET request
 Example Response:
 
    {
@@ -62,5 +62,9 @@ Example Response:
 
    },
  
+# Author
 
-When viewing an animal’s details, I should be able to add the number of votes for each animal. This number of votes should then be displayed together with the animal’s details. No persistence is needed for the votes.
+ "author": "Ryan Langat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryan605/code_challange2/issues"

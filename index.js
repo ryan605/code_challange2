@@ -19,8 +19,8 @@ function createAnimalItem(thumbnail, name, id) {
     let animalImage = document.createElement("img");
     animalImage.src = thumbnail;
     animalImage.alt = `${name} image`;
-    animalImage.style.height = "200px";
-    animalImage.style.width = "200px";
+    animalImage.style.height = "300px";
+    animalImage.style.width = "400px";
   
     // animal name -the zoo
     let animalTitle = document.createElement("h5");
@@ -59,12 +59,8 @@ function votesItem(id, name, image, votes) {
         valueOfVotes = voting.innerHTML
         console.log(valueOfVotes)
         voting.innerHTML = ++valueOfVotes
-        
-       // }
-        //let options = {
-          //  method: "PATCH",
-            //characters:JSON.stringify(payload),
-        //}
+     
+
         fetch(`http://localhost:3000/characters/${id}`,{
           method: "PATCH",
 
@@ -204,7 +200,6 @@ function count(id){
 
 document.addEventListener("DOMContentLoaded", (event) => {
   print(`Event loaded: ${event.type}`);
-
-
+  event.preventDefault()
   print(namesList());
 });
