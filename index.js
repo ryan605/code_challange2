@@ -19,7 +19,7 @@ function createAnimalItem(thumbnail, name, id) {
     let animalImage = document.createElement("img");
     animalImage.src = thumbnail;
     animalImage.alt = `${name} image`;
-    animalImage.style.height = "150px";
+    animalImage.style.height = "200px";
     animalImage.style.width = "200px";
   
     // animal name -the zoo
@@ -38,7 +38,7 @@ function createAnimalItem(thumbnail, name, id) {
   }
   
   function nameItem(name, id) {
-    const nmeTimes = document.createElement("li");
+    const nmeTimes = document.createElement("ul");
     nmeTimes.setAttribute("id", id);
     let names = document.createElement("h5");
   names.innerHTML = name;
@@ -170,7 +170,7 @@ function animalsContainer(id) {
       return res.json();
     })
     .then((data) => {
-      console.log(data + "john");
+      console.log(data + "bankai");
       const animal = data[id - 1];
       const animalssItem = createAnimalItem(
         animal.image,
